@@ -41,7 +41,7 @@ class HBNBCommand(cmd.Cmd):
         """
         if arg:
             if arg in all_class:
-                my_obj = all_class[arg]()
+                my_obj = all_class[arg]()  # creates instance of class
                 my_obj.save()
                 print(my_obj.id)
             else:
